@@ -60,3 +60,14 @@ const team = [{
     petName: "Tofa",
 },
 ];
+
+//per trovare l'età media 
+function mediaAge(array){ 
+    let somma = 0; 
+     for(i = 0;i < array.length;i++){ 
+      somma += array[i].age; //
+      } // 
+      return somma / array.length; 
+     }
+ 
+  console.log(mediaAge(team));
