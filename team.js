@@ -85,3 +85,14 @@ function findSameNames(array, nome) {
   }
   let sameNames = findSameNames(team, "name");
   console.log(sameNames);
+//stampare i nomi degli animali 
+function printPetName(array, parametro, name1) {
+ 
+    for (let i = 0; i < array.length; i++) {
+      if( array[i][parametro].length >= 1 ){
+        console.log(`L'animale domestico di ${array[i][name1]} si chiama ${array[i][parametro]} `) 
+      }
+      
+    }
+  }
+   printPetName(team, "petName" , "name");
