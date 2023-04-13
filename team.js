@@ -96,3 +96,24 @@ function printPetName(array, parametro, name1) {
     }
   }
    printPetName(team, "petName" , "name");
+//funzione trova gioco
+function findGame(array){
+    for(let i=0; i < array.length; i++){
+        if(array[i].favoriteVideoGame === "LoL" || array[i].favoriteVideoGame === "League of Legends" || array[i].favoriteVideoGame === "League of legends"){
+            console.log(array[i].name);
+        }
+    }
+}
+
+findGame(team)
+
+// funzione per stampare i nomi in ordine alfabetico
+
+function printTeam(array) {
+    array.sort((a, b) => (a.surname > b.surname) ? 1 : -1);
+    for (let i = 0; i < array.length; i++) {
+        console.log(`${array[i].surname} ${array[i].name}`);
+    }
+}
+printTeam(team)
+
