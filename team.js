@@ -71,3 +71,17 @@ function mediaAge(array){
      }
  
   console.log(mediaAge(team));
+//stampare i nomi uguali
+function findSameNames(array, nome) {
+    let sameNames = [];
+    for (let i = 0; i < array.length; i++) {
+      for (let j = i + 1; j < array.length; j++) {
+        if (array[i][nome] === array[j][nome] && !sameNames.includes(array[i][nome])) {
+          sameNames.push(array[i][nome]);
+        }
+      }
+    }
+    return sameNames;
+  }
+  let sameNames = findSameNames(team, "name");
+  console.log(sameNames);
