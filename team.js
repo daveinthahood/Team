@@ -60,3 +60,7 @@ const team = [{
     petName: "Tofa",
 },
 ];
+
+//stampare l'età in ordine 
+let orderAge = team.sort((a,b) => (a.age > b.age) ? 1 : -1);
+console.log(orderAge);
